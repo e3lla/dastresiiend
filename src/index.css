@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+* {
+  direction: rtl;
+  text-align: right;
+}
+.btn-mine {
+  background-color: whitesmoke;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 13px;
+  cursor: pointer;
+  box-shadow: black;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+.btn-mine:hover {
+  background-color: #0A295A;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0A295A !important;
+  border-color: #0A295A !important;
+}
+
+.btn-hover-blue:hover {
+  background-color: #0A295A !important;
+  border-color: #0A295A !important;
+  color: white !important;
+}
+.badge-orange{
+  background: #FE5F55;
+}
