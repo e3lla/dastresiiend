@@ -1,0 +1,41 @@
+{
+  "short_name": "Dastresi",
+  "name": "فروشگاه اینترنتی دسترسی",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0A5ABD",
+   "icons": [
+    {
+      "src": "/src/Images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+  {
+    "src": "/screenshots/home.png",
+    "sizes": "1080x1920",
+    "type": "image/png"
+  },
+  {
+    "src": "/screenshots/product.png",
+    "sizes": "1080x1920",
+    "type": "image/png"
+  }
+]
+
+
+
+}
