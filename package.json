@@ -8,7 +8,7 @@
     "server": "json-server --watch db.json --port 3001 --static ./public",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "client": "vite",
-    "build": "vite build",  // اصلاح شده
+    "build": "vite build", 
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{js,jsx,json,css}\"",
     "predeploy": "npm run build",
