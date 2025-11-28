@@ -1,14 +1,14 @@
 {
-  "name": "eli",
+  "name": "dastresiiend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://YOUR_USERNAME.github.io/YOUR_REPO/",
+  "homepage": "https://e3lla.github.io/dastresiiend",
   "scripts": {
+    "server": "json-server --watch db.json --port 3001 --static ./public",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "client": "vite",
-    "server": "json-server --watch db.json --port 3001",
-    "build": "vite build",
+    "build": "vite build",  // اصلاح شده
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{js,jsx,json,css}\"",
     "predeploy": "npm run build",
