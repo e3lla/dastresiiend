@@ -8,7 +8,7 @@ import Image2 from "../../../public/Images/banner-dastresi-1 (1).png"
 import Image3 from "../../../public/Images/banner-dastresi-2-min.png"
 import Image4 from "../../../public/Images/banner-dastresi-4-min.png"
 
-import './styles.css';
+import './Slider.css';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
