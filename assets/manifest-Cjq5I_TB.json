@@ -1,5 +1,5 @@
 {
-  "short_name": "dastresiiend",
+  "short_name": "Dastresiiend",
   "name": "فروشگاه اینترنتی دسترسی",
   "start_url": "/dastresiiend/",
   "display": "standalone",
@@ -7,17 +7,17 @@
   "theme_color": "#0A5ABD",
    "icons": [
     {
-      "src": "/public/Images/favicon.png",
+      "src": "/public/Images/dast.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/public/Images/favicon.png",
+      "src": "/public/Images/dast.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/public/Images/favicon.png",
+      "src": "/public/Images/dast.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
