@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { fetchCategoriesAPI } from "../../../public/Api/SecondSliderApi";
+import { fetchCategoriesAPI } from "../../Api/SecondSliderApi";
 
 export const fetchCategories = createAsyncThunk(
   'SecondSlider/fetchCategories',
