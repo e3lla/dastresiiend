@@ -1,34 +1,46 @@
-// src/Api/ProductsApi.js
+const API_URL = 'http://localhost:3001';
+
 export const fetchProductsAPI = async () => {
   try {
-    const response = await fetch('/dastresiiend/db.json');
+    const response = await fetch(`${API_URL}/products`);
     if (!response.ok) {
       throw new Error('خطا');
     }
     const data = await response.json();
-    return data.products; // تغییر این خط
+    return data;
   } catch (error) {
-    throw new Error('خطا در دریافت محصولات: ' + error.message);
+    throw new Error('خطا در سرور: ' + error.message);
   }
 };
 
-// افزودن محصول 
+//  محصول 
 export const addProductAPI = async (product) => {
-  // در حالت استاتیک، فقط به state اضافه می‌کنیم
-  console.log('افزودن محصول:', product);
-  return product;
+  const response = await fetch(`${API_URL}/products`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(product),
+  });
+  return await response.json();
 };
 
-// آپدیت محصول
+//  آپدیت 
 export const updateProductAPI = async (id, product) => {
-  // در حالت استاتیک، فقط state رو آپدیت می‌کنیم
-  console.log('آپدیت محصول:', id, product);
-  return product;
+  const response = await fetch(`${API_URL}/products/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(product),
+  });
+  return await response.json();
 };
 
-// حذف محصول
+//  حذف 
 export const deleteProductAPI = async (id) => {
-  // در حالت استاتیک، فقط از state حذف می‌کنیم
-  console.log('حذف محصول:', id);
-  return { id };
+  const response = await fetch(`${API_URL}/products/${id}`, {
+    method: 'DELETE',
+  });
+  return await response.json();
 };

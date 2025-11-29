@@ -1,21 +1,27 @@
-// src/Api/CategoriesApi.js
+const API_URL = 'http://localhost:3001';
+
 export const fetchCategoriesAPI = async () => {
   try {
-    const response = await fetch('/dastresiiend/db.json');
+    const response = await fetch(`${API_URL}/categories`);
     
     if (!response.ok) {
       throw new Error(`خطای سرور: ${response.status}`);
     }
     
     const data = await response.json();
-    return data.categories; // تغییر این خط
+    return data;
   } catch (error) {
-    throw new Error(`خطا در دریافت دسته‌بندی‌ها: ${error.message}`);
+    throw new Error(`خطا در سرور: ${error.message}`);
   }
 };
 
 export const addCategoryAPI = async (category) => {
-  // در حالت استاتیک، فقط به state اضافه می‌کنیم
-  console.log('افزودن دسته‌بندی:', category);
-  return category;
+  const response = await fetch(`${API_URL}/categories`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(category),
+  });
+  return await response.json();
 };

@@ -1,21 +1,27 @@
-// src/Api/SliderProductsApi.js
+const API_URL = 'http://localhost:3001';
+
 export const fetchSliderProductsAPI = async () => {
   try {
-    const response = await fetch('/dastresiiend/db.json');
+    const response = await fetch(`${API_URL}/sliderProducts`);
     
     if (!response.ok) {
       throw new Error(`خطای سرور: ${response.status}`);
     }
     
     const data = await response.json();
-    return data.sliderProducts; // تغییر این خط
+    return data;
   } catch (error) {
-    throw new Error(`خطا در دریافت محصولات اسلایدر: ${error.message}`);
+    throw new Error(`خطا در ارتباط با سرور: ${error.message}`);
   }
 };
 
 export const addSliderProductAPI = async (product) => {
-  // در حالت استاتیک، فقط به state اضافه می‌کنیم
-  console.log('افزودن محصول اسلایدر:', product);
-  return product;
+  const response = await fetch(`${API_URL}/sliderProducts`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(product),
+  });
+  return await response.json();
 };

@@ -1,33 +1,45 @@
-// src/Api/ArticlesApi.js
+const API_URL = 'http://localhost:3001';
+
 export const fetchArticlesAPI = async () => {
   try {
-    const response = await fetch('/dastresiiend/db.json');
+    const response = await fetch(`${API_URL}/Api/articles`);
     
     if (!response.ok) {
       throw new Error(`خطای سرور: ${response.status}`);
     }
     
     const data = await response.json();
-    return data.articles; // تغییر این خط
+    return data;
   } catch (error) {
-    throw new Error(`خطا در دریافت مقالات: ${error.message}`);
+    throw new Error(`خطا در سرور: ${error.message}`);
   }
 };
 
 export const addArticleAPI = async (article) => {
-  // در حالت استاتیک، فقط به state اضافه می‌کنیم
-  console.log('افزودن مقاله:', article);
-  return article;
+  const response = await fetch(`${API_URL}/articles`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(article),
+  });
+  return await response.json();
 };
 
 export const updateArticleAPI = async (id, article) => {
-  // در حالت استاتیک، فقط state رو آپدیت می‌کنیم
-  console.log('آپدیت مقاله:', id, article);
-  return article;
+  const response = await fetch(`${API_URL}/articles/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(article),
+  });
+  return await response.json();
 };
 
 export const deleteArticleAPI = async (id) => {
-  // در حالت استاتیک، فقط از state حذف می‌کنیم
-  console.log('حذف مقاله:', id);
-  return { id };
+  const response = await fetch(`${API_URL}/articles/${id}`, {
+    method: 'DELETE',
+  });
+  return await response.json();
 };
