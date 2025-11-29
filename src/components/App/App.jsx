@@ -1,9 +1,10 @@
-import Font from '../../../public/Font/Font';
+import Font from '../Font/Font';
 import Footer from '../Footer/Footer';
 import GrayPart from '../GrayPart/GrayPart';
 import Header from '../Header/Header';
 import Home from '../Home/Home'
 import UnderFooter from '../UnderFooter/UnderFooter';
+
 
 const App = () => {
    return ( 
