@@ -1,4 +1,4 @@
-import Font from '../Font/Font';
+import Font from '../../../public/Font/Font';
 import Footer from '../Footer/Footer';
 import GrayPart from '../GrayPart/GrayPart';
 import Header from '../Header/Header';
