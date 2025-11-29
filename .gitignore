@@ -1,5 +1,3 @@
-# ایجاد .gitignore جدید
-cat > .gitignore << EOL
 # Logs
 logs
 *.log
@@ -9,18 +7,48 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist-ssr
+# Dependencies
+node_modules/
+/dist/
+/dist-ssr
+*.tgz
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build outputs
+/dist/
+/build/
+
+# Local development
 *.local
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-EOL
+# Editor
+.sublime-*
+
+# Optional
+coverage/
+.nyc_output/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock

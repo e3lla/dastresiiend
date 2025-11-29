@@ -1,12 +1,5 @@
 @import "tailwindcss";
-
 @plugin "daisyui";
-@import url('./Font.css');
-
-html, body {
-  font-family: 'Shabnam', system-ui, sans-serif;
-  direction: rtl; 
-}
 
 * {
   direction: rtl;
