@@ -1,45 +1,33 @@
-const API_URL = 'http://localhost:3001';
-
+// src/Api/DividerApi.js
 export const fetchDividerProductsAPI = async () => {
   try {
-    const response = await fetch(`${API_URL}/dividerProducts`);
+    const response = await fetch('/dastresiiend/db.json');
     
     if (!response.ok) {
       throw new Error(`خطای سرور: ${response.status}`);
     }
     
     const data = await response.json();
-    return data;
+    return data.dividerProducts; // تغییر این خط
   } catch (error) {
-    throw new Error(`خطا در سرور: ${error.message}`);
+    throw new Error(`خطا در دریافت محصولات: ${error.message}`);
   }
 };
 
 export const addDividerProductAPI = async (product) => {
-  const response = await fetch(`${API_URL}/dividerProducts`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(product),
-  });
-  return await response.json();
+  // در حالت استاتیک، فقط به state اضافه می‌کنیم
+  console.log('افزودن محصول:', product);
+  return product;
 };
 
 export const updateDividerProductAPI = async (id, product) => {
-  const response = await fetch(`${API_URL}/dividerProducts/${id}`, {
-    method: 'PUT',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(product),
-  });
-  return await response.json();
+  // در حالت استاتیک، فقط state رو آپدیت می‌کنیم
+  console.log('آپدیت محصول:', id, product);
+  return product;
 };
 
 export const deleteDividerProductAPI = async (id) => {
-  const response = await fetch(`${API_URL}/dividerProducts/${id}`, {
-    method: 'DELETE',
-  });
-  return await response.json();
+  // در حالت استاتیک، فقط از state حذف می‌کنیم
+  console.log('حذف محصول:', id);
+  return { id };
 };
