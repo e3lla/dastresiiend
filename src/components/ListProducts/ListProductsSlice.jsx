@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { fetchListProductsAPI } from "../../Api/ListProductsApi";
+import { fetchListProductsAPI } from "../Api/ListProductsApi";
 
 export const fetchListProducts = createAsyncThunk(
   'ListProducts/fetchListProducts',
@@ -43,7 +43,7 @@ const ListProductsSlice = createSlice({
 });
 
 export const { addListProduct } = ListProductsSlice.actions;
-export const selectListProducts = (state) => state.ListProducts.items;
+export const selectListProducts = (state) => state.listProducts.items;
 export const selectListProductsStatus = (state) => state.ListProducts.status;
 export const selectListProductsError = (state) => state.ListProducts.error;
 
