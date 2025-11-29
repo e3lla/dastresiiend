@@ -3,7 +3,7 @@ import "./Font.css";
 
 const Font = ({ children }) => {
   return (
-    <div style={{ fontFamily: "Shabnam-FD, system-ui, sans-serif" }}>
+    <div style={{ fontFamily: "Shabnam, system-ui, sans-serif" }}>
       {children}
     </div>
   );
