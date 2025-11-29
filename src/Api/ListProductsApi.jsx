@@ -2,7 +2,7 @@ const API_URL = 'http://localhost:3001';
 
 export const fetchListProductsAPI = async () => {
   try {
-    const response = await fetch(`${API_URL}/db.json/listProducts`);
+    const response = await fetch(`${API_URL}/listProducts`);
     
     if (!response.ok) {
       throw new Error(`خطای سرور: ${response.status}`);
