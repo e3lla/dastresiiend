@@ -48,7 +48,7 @@ export default function LastArticle() {
 
   return (
     <>
-      <h2 className="text-center flex justify-center text-2xl font-bold mt-7">دسته‌بندی‌های منتخب</h2>
+      <h2 className="text-center flex justify-center text-2xl font-bold mt-7">آخرین مقالات</h2>
 
       <Swiper
         slidesPerView={4}

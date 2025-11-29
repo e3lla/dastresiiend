@@ -1,10 +1,12 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+
 export const fetchArticles = createAsyncThunk(
   'articles/fetchArticles',
   async (_, { rejectWithValue }) => {
     try {
-      const response = await fetch('http://localhost:3001/articles');
+      const response = await fetch(`${API_URL}/articles`);
       if (!response.ok) throw new Error(`خطای HTTP: ${response.status}`);
       const data = await response.json();
       return data;
