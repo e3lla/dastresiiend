@@ -1,0 +1,386 @@
+
+{
+    
+  "products": [
+    {
+      "id": 1,
+      "title": "Anker A3994 انكر مدل k20i هندزفري بلوتوشي",
+      "priceBefore": 65654340,
+      "discount": 30000,
+      "img":"./Images/dor.jpg",
+      "priceNow": 0
+    },
+    {
+          "id": 1,
+      "title": "Anker A3994 انكر مدل k20i هندزفري بلوتوشي",
+      "priceBefore": 9999990,
+      "discount": 30000,
+      "img": "./Images/bl.jpg",
+      "priceNow": 10000
+    }
+  ]
+  ,
+
+
+  "dividerProducts": [
+    {
+      "id": 1,
+      "title": "Anker A3994 انكر مدل k20i هندزفري بلوتوشي",
+      "img": "./Images/ANKER-V22.jpg",
+      "priceBefore": 1730000,
+      "discount": 40000,
+      "priceNow": 1690000
+    },
+    {
+      "id": 2,
+      "title": "Mcdodo هندزفري بلوتوشي دورگردني مك دودو مدل HP-0210",
+      "img": "./Images/ANKER-V22.jpg",
+      "priceBefore": 2040000,
+      "discount": 350000,
+      "priceNow": 1690000
+    },
+     {
+      "id": 3,
+      "title": "Mcdodo هندزفري بلوتوشي دورگردني مك دودو مدل HP-0210",
+      "img": "./Images/ANKER-V22.jpg",
+      "priceBefore": 2040000,
+      "discount": 350000,
+      "priceNow": 1690000
+    }
+  ]
+,
+  "articles": [
+    {
+      "id": 1,
+      "title": "کابل MFi چیست؟ : ناجی باتری آیفون شما یا یک حقه تبلیغاتی",
+      "image": "./Images/what-is-mfi-apple-dastresi-Artboard 1 copy 3.jpg",
+      "link": "/article/mfi-apple"
+    },
+    {
+      "id": 2,
+      "title": "شارژر بی‌سیم بهتر است یا شارژر معمولی؟ مقایسه کامل",
+      "image": "./Images/what-is-mfi-apple-dastresi-Artboard 1 copy 3.jpg",
+      "link": "/article/wireless-charging"
+    },
+    {
+      "id": 3,
+      "title": "انواع هندزفری بلوتوث و راهنمای انتخاب بهترین مدل",
+      "image": "./Images/what-is-mfi-apple-dastresi-Artboard 1 copy 3.jpg",
+      "link": "/article/headphones-guide"
+    },
+    {
+      "id": 4,
+      "title": "چگونه عمر باتری هندزفری را افزایش دهیم؟",
+      "image": "./Images/what-is-mfi-apple-dastresi-Artboard 1 copy 3.jpg",
+      "link": "/article/battery-tips"
+    },
+    {
+      "id": 5,
+      "title": "مقایسه هندزفری‌های گیمینگ برندهای مختلف",
+      "image": "./Images/what-is-mfi-apple-dastresi-Artboard 1 copy 3.jpg",
+      "link": "/article/gaming-comparison"
+    },
+    {
+      "id": 6, 
+      "title": "راهنمای خرید پاوربانک مناسب برای دستگاه‌های مختلف",
+      "image": "./Images/what-is-mfi-apple-dastresi-Artboard 1 copy 3.jpg",
+      "link": "/article/powerbank-guide"
+    },
+    {
+      "id": 7,
+      "title": "تفاوت کابل‌های USB-C و مزایای هرکدام",
+      "image": "./Images/what-is-mfi-apple-dastresi-Artboard 1 copy 3.jpg",
+      "link": "/article/usb-c-guide"
+    }
+  ],
+  
+  "sliderProducts": [
+    {
+      "id": 1,
+      "name": "هندزفری بلوتوثی انکر مدل Soundcore R50i",
+      "link": "/product/1",
+      "colors": ["#000000", "#444444", "#FF0000"],
+      "image": "./Images/SE3338-11.jpg",
+      "priceBeforeDiscount": 1500000,
+      "price": 1000000,
+      "discountPercent": 33,
+      "available": true,
+      "category": "هندزفری بلوتوثی"
+    },
+    {
+      "id": 2,
+      "name": "پاوربانک شیائومی مدل Redmi 10000mAh",
+      "link": "/product/2",
+      "colors": ["#FFFFFF", "#FF0000"],
+      "image": "./Images/battrey-xiaomi-11.jpg",
+      "priceBeforeDiscount": 1500000,
+      "price": 1000000,
+      "discountPercent": 33,
+      "available": true,
+      "category": "پاوربانک"
+    },
+    {
+      "id": 3,
+      "name": "کابل شارژر آیفون مدل MFi Certified",
+      "link": "/product/3",
+      "colors": ["#FFFFFF", "#000000"],
+      "image": "./Images/SE3338-11.jpg",
+      "priceBeforeDiscount": 800000,
+      "price": 500000,
+      "discountPercent": 37,
+      "available": true,
+      "category": "کابل شارژ"
+    },
+    {
+      "id": 4,
+      "name": "هندزفری گیمینگ رزر مدل Kraken X",
+      "link": "/product/4",
+      "colors": ["#00FF00", "#000000"],
+      "image": "./Images/battrey-xiaomi-11.jpg",
+      "priceBeforeDiscount": 2500000,
+      "price": 1800000,
+      "discountPercent": 28,
+      "available": true,
+      "category": "هندزفری گیمینگ"
+    },
+    {
+      "id": 5,
+      "name": "شارژر بی‌سیم سامسونگ مدل EP-P1300",
+      "link": "/product/5",
+      "colors": ["#000000", "#FFFFFF"],
+      "image": "./Images/SE3338-11.jpg",
+      "priceBeforeDiscount": 1200000,
+      "price": 900000,
+      "discountPercent": 25,
+      "available": true,
+      "category": "شارژر بی‌سیم"
+    },
+    {
+      "id": 6,
+      "name": "اسپیکر بلوتوثی جی‌بی‌ال مدل Flip 5",
+      "link": "/product/6",
+      "colors": ["#0000FF", "#FF0000", "#00FF00"],
+      "image": "./Images/battrey-xiaomi-11.jpg",
+      "priceBeforeDiscount": 3000000,
+      "price": 2200000,
+      "discountPercent": 26,
+      "available": true,
+      "category": "اسپیکر بلوتوثی"
+    }
+  ]
+,
+
+  "categories": [
+    {
+      "id": 1,
+      "name": "آداپتور و شارژر",
+      "image": "./Images/adaptor.png"
+    },
+    {
+      "id": 2,
+      "name": "گیمینگ",
+      "image": "./Images/gaming.png"
+    },
+    {
+      "id": 3,
+      "name": "هندزفری بلوتوث",
+      "image": "./Images/adaptor.png"
+    },
+    {
+      "id": 4,
+      "name": "کابل و مبدل",
+      "image": "./Images/gaming.png"
+    },
+    {
+      "id": 5,
+      "name": "پاوربانک",
+      "image": "./Images/adaptor.png"
+    },
+    {
+      "id": 6,
+      "name": "اسپیکر",
+      "image": "./Images/gaming.png"
+    },
+    {
+      "id": 7,
+      "name": "لوازم جانبی",
+      "image": "./Images/adaptor.png"
+    },
+    {
+      "id": 8,
+      "name": "شارژر بی‌سیم",
+      "image": "./Images/gaming.png"
+    },
+    {
+      "id": 9,
+      "name": "کیف و کاور",
+      "image": "./Images/adaptor.png"
+    }
+  ]
+,
+"brands": [
+    {
+      "id": 1,
+      "name": "Anker",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mcdodo",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Samsung",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Apple",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Xiaomi",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Huawei",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Sony",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 8,
+      "name": "JBL",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Razer",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Logitech",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Baseus",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 12,
+      "name": "UGreen",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Aukey",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Belkin",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Spigen",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Mophie",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Anker",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Mcdodo",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Samsung",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Apple",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Xiaomi",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Huawei",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Sony",
+      "logo": "./Images/Untitled-159.jpg"
+    },
+    {
+      "id": 24,
+      "name": "JBL",
+      "logo": "./Images/Untitled-159.jpg"
+    }
+  ],  "listProducts": [
+    {
+      "id": 1,
+      "title": "هندزفری بلوتوثی انکر R50i مدل Anker A3949",
+      "img": "./Images/bl.jpg",
+      "priceBefore": 1390000,
+      "discount": 300000,
+      "priceNow": 1090000
+    },
+    {
+      "id": 2,
+      "title": "هندزفری بلوتوثی سامسونگ Buds2 مدل Samsung Galaxy",
+      "img": "./Images/bl.jpg",
+      "priceBefore": 2500000,
+      "discount": 500000,
+      "priceNow": 2000000
+    },
+    {
+      "id": 3,
+      "title": "پاوربانک شیائومی مدل Redmi 10000mAh",
+      "img": "./Images/bl.jpg",
+      "priceBefore": 800000,
+      "discount": 150000,
+      "priceNow": 650000
+    },
+    {
+      "id": 4,
+      "title": "کابل شارژر آیفون مدل MFi Certified",
+      "img": "./Images/bl.jpg",
+      "priceBefore": 600000,
+      "discount": 200000,
+      "priceNow": 400000
+    },
+    {
+      "id": 5,
+      "title": "شارژر بی‌سیم سامسونگ مدل EP-P1300",
+      "img": "./Images/bl.jpg",
+      "priceBefore": 1200000,
+      "discount": 300000,
+      "priceNow": 900000
+    }
+
+  ]
+
+}
