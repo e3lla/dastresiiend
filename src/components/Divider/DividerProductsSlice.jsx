@@ -1,29 +1,14 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { fetchDividerProductsAPI } from "../Api/DividerApi";
 
 export const fetchDividerProducts = createAsyncThunk(
   'dividerProducts/fetchDividerProducts',
   async (_, { rejectWithValue }) => {
     try {
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 5000);
-      
-      const response = await fetch('http://localhost:3001/dividerProducts', {
-        signal: controller.signal
-      });
-      
-      clearTimeout(timeoutId);
-      
-      if (!response.ok) {
-        throw new Error(`خطای HTTP: ${response.status}`);
-      }
-      
-      const data = await response.json();
+      const data = await fetchDividerProductsAPI();
       return data;
     } catch (error) {
-      if (error.name === 'AbortError') {
-        return rejectWithValue('اتصال timeout خورد. سرور پاسخ نمی‌دهد');
-      }
-      return rejectWithValue(`سرور در دسترس نیست: ${error.message}`);
+      return rejectWithValue(error.message);
     }
   }
 );

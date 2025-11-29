@@ -1,8 +1,9 @@
+// src/components/ListProductsSlice.js
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { fetchListProductsAPI } from "../Api/ListProductsApi";
 
 export const fetchListProducts = createAsyncThunk(
-  'ListProducts/fetchListProducts',
+  'listProducts/fetchListProducts',
   async (_, { rejectWithValue }) => {
     try {
       const data = await fetchListProductsAPI();
@@ -14,17 +15,13 @@ export const fetchListProducts = createAsyncThunk(
 );
 
 const ListProductsSlice = createSlice({
-  name: "ListProducts",
+  name: "listProducts",
   initialState: {
     items: [],
     status: 'idle',
     error: null
   },
-  reducers: {
-    addListProduct: (state, action) => {
-      state.items.push(action.payload);
-    },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchListProducts.pending, (state) => {
@@ -42,9 +39,8 @@ const ListProductsSlice = createSlice({
   }
 });
 
-export const { addListProduct } = ListProductsSlice.actions;
 export const selectListProducts = (state) => state.listProducts.items;
-export const selectListProductsStatus = (state) => state.ListProducts.status;
-export const selectListProductsError = (state) => state.ListProducts.error;
+export const selectListProductsStatus = (state) => state.listProducts.status;
+export const selectListProductsError = (state) => state.listProducts.error;
 
 export default ListProductsSlice.reducer;

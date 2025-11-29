@@ -54,7 +54,7 @@ const Divider = () => {
             h-[250px] lg:h-[350px]
           "
         >
-          <div className="w-full lg:w-[40%] h-[140px] lg:h-full flex-shrink-0  ">
+          <div className="w-full lg:w-[40%] h-[140px] lg:h-full flex-shrink-0">
             <img
               className="w-full h-full object-contain p-2"
               alt={card.title}

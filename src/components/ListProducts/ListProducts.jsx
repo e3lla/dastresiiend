@@ -1,3 +1,4 @@
+// src/components/ListProducts.jsx
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { selectListProducts, selectListProductsStatus, selectListProductsError, fetchListProducts } from "./ListProductsSlice";

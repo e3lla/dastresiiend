@@ -1,12 +1,11 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { fetchProductsAPI } from "../Api/ProductsApi";
 
 export const fetchProducts = createAsyncThunk(
   'products/fetchProducts',
   async (_, { rejectWithValue }) => {
     try {
-      const response = await fetch('http://localhost:3001/products');
-      if (!response.ok) throw new Error(`خطای سرور: ${response.status}`);
-      const data = await response.json();
+      const data = await fetchProductsAPI();
       return data;
     } catch (error) {
       return rejectWithValue(error.message);
@@ -16,11 +15,7 @@ export const fetchProducts = createAsyncThunk(
 
 const productsSlice = createSlice({
   name: "products",
-  initialState: {
-    items: [],
-    status: 'idle',
-    error: null
-  },
+  initialState: { items: [], status: 'idle', error: null },
   reducers: {},
   extraReducers: (builder) => {
     builder

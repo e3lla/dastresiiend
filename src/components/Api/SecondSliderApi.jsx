@@ -1,15 +1,15 @@
-const API_URL = 'http://localhost:3001';
+const API_URL = 'https://e3lla.github.io/db.json';
 
 export const fetchCategoriesAPI = async () => {
   try {
-    const response = await fetch(`${API_URL}/categories`);
+    const response = await fetch(`${API_URL}/db.json`);
     
     if (!response.ok) {
       throw new Error(`خطای سرور: ${response.status}`);
     }
     
     const data = await response.json();
-    return data;
+    return data.categories; // توجه: اگر دسته‌ها داخل key "categories" هستند
   } catch (error) {
     throw new Error(`خطا در سرور: ${error.message}`);
   }

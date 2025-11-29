@@ -13,6 +13,3 @@ createRoot(document.getElementById('root')).render(
     </HashRouter>
   </Provider>,
 )
-
-
-

@@ -1,45 +1,20 @@
-const API_URL = 'http://localhost:3001';
+// src/Api/LastArticleApi.js
 
 export const fetchArticlesAPI = async () => {
   try {
-    const response = await fetch(`${API_URL}/Api/articles`);
+    const response = await fetch('https://e3lla.github.io/db.json/db.json'); // لینک مستقیم JSON
     
     if (!response.ok) {
       throw new Error(`خطای سرور: ${response.status}`);
     }
     
     const data = await response.json();
-    return data;
+    
+    // فرض می‌کنیم مقالات داخل data.articles هستن
+    return data.articles || [];
   } catch (error) {
     throw new Error(`خطا در سرور: ${error.message}`);
   }
 };
 
-export const addArticleAPI = async (article) => {
-  const response = await fetch(`${API_URL}/articles`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(article),
-  });
-  return await response.json();
-};
-
-export const updateArticleAPI = async (id, article) => {
-  const response = await fetch(`${API_URL}/articles/${id}`, {
-    method: 'PUT',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(article),
-  });
-  return await response.json();
-};
-
-export const deleteArticleAPI = async (id) => {
-  const response = await fetch(`${API_URL}/articles/${id}`, {
-    method: 'DELETE',
-  });
-  return await response.json();
-};
+// add/update/delete دیگه کار نمی‌کنه روی GitHub Pages

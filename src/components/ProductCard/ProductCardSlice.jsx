@@ -1,7 +1,7 @@
+// src/components/ProductCard/ProductCardSlice.js
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { fetchSliderProductsAPI } from "../Api/ProductCardApi";
 
-//    خطا 
 export const fetchSliderProducts = createAsyncThunk(
   'sliderProducts/fetchSliderProducts',
   async (_, { rejectWithValue }) => {
@@ -16,16 +16,8 @@ export const fetchSliderProducts = createAsyncThunk(
 
 const ProductCardSlice = createSlice({
   name: "sliderProducts",
-  initialState: {
-    items: [],
-    status: 'idle',
-    error: null
-  },
-  reducers: {
-    removeProduct: (state, action) => {
-      state.items = state.items.filter((p) => p.id !== action.payload);
-    },
-  },
+  initialState: { items: [], status: 'idle', error: null },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchSliderProducts.pending, (state) => {
@@ -43,7 +35,6 @@ const ProductCardSlice = createSlice({
   }
 });
 
-export const { removeProduct } = ProductCardSlice.actions;
 export const selectSliderProducts = (state) => state.sliderProducts.items;
 export const selectSliderProductsStatus = (state) => state.sliderProducts.status;
 export const selectSliderProductsError = (state) => state.sliderProducts.error;

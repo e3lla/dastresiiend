@@ -1,12 +1,11 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { fetchArticlesAPI } from "../Api/ArticlesApi";
 
 export const fetchArticles = createAsyncThunk(
   'articles/fetchArticles',
   async (_, { rejectWithValue }) => {
     try {
-      const response = await fetch('http://localhost:3001/articles');
-      if (!response.ok) throw new Error(`خطای HTTP: ${response.status}`);
-      const data = await response.json();
+      const data = await fetchArticlesAPI();
       return data;
     } catch (error) {
       return rejectWithValue(error.message);

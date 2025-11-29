@@ -1,3 +1,4 @@
+// src/features/FavoriteSlice.js
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { fetchBrandsAPI } from "../Api/FavoriteApi";
 
