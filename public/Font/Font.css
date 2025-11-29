@@ -1,0 +1,24 @@
+/* src/font.css */
+@font-face {
+  font-family: 'Shabnam';
+  src: url('/Font/Shabnam-FD.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shabnam';
+  src: url('/Font/Shabnam-Bold-FD.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shabnam';
+  src: url('/Font/Shabnam-Medium-FD.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

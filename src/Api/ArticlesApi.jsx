@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || 'https://localhost:3001';
+const API_URL = 'http://localhost:3001';
 
 export const fetchArticlesAPI = async () => {
   try {
@@ -11,7 +11,7 @@ export const fetchArticlesAPI = async () => {
     const data = await response.json();
     return data;
   } catch (error) {
-    throw new Error(`خطا در دریافت مقالات: ${error.message}`);
+    throw new Error(`خطا در سرور: ${error.message}`);
   }
 };
 
