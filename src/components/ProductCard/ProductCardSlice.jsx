@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { fetchSliderProductsAPI } from "../../Api/ProductCardApi";
+import { fetchSliderProductsAPI } from "../../../public/Api/ProductCardApi";
 
 //    خطا 
 export const fetchSliderProducts = createAsyncThunk(

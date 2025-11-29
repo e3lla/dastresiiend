@@ -9,12 +9,12 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets'
   },
-  server: {
-    proxy: {
-      './Api': {
-        target: 'http://localhost:3001',
-        changeOrigin: true
-      }
+ server: {
+  proxy: {
+    '/api': {  // باید ببینید دقیقاً چه مسیری استفاده می‌کنید
+      target: 'http://localhost:3001',
+      changeOrigin: true
     }
   }
+}
 })
