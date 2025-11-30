@@ -7,7 +7,7 @@
       "title": "Anker A3994 انكر مدل k20i هندزفري بلوتوشي",
       "priceBefore": 65654340,
       "discount": 30000,
-      "img":"./Images/dor.jpg",
+      "img":"/Images/dor.jpg",
       "priceNow": 0
     },
     {
@@ -15,7 +15,7 @@
       "title": "Anker A3994 انكر مدل k20i هندزفري بلوتوشي",
       "priceBefore": 9999990,
       "discount": 30000,
-      "img": "./Images/bl.jpg",
+      "img": "/Images/bl.jpg",
       "priceNow": 10000
     }
   ]
@@ -26,7 +26,7 @@
     {
       "id": 1,
       "title": "Anker A3994 انكر مدل k20i هندزفري بلوتوشي",
-      "img": "./Images/ANKER-V22.jpg",
+      "img": "/Images/ANKER-V22.jpg",
       "priceBefore": 1730000,
       "discount": 40000,
       "priceNow": 1690000
