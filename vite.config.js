@@ -7,11 +7,10 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/dastresiiend/',
+  base: '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    emptyOutDir: true
-    // rollupOptions رو حذف کردیم چون نیازی نیست
+    emptyOutDir: true,
   }
 })

@@ -11,7 +11,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{js,jsx,json,css}\"",
-    "predeploy": "npm run build && git add -f dist/ && git commit -m 'Deploy updates' || true",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
